@@ -9,7 +9,7 @@ def get_webpage(url):
 	page = requests.get(url)
 	if(page.status_code is not 200):
 		return -1
-	return str(page)
+	return page
 
 
 # remove scripts,images,
